@@ -40,6 +40,9 @@ function getPDFtext(theURL,theNAME,message,term,total_len){
                 in_obj.count += countOccur(t_str,term);
                 checked += 1;
                 if (checked == total){
+                    h1 {
+                        text-align: right;
+                    }
                     //message.innerHTML += "<tr><td><a target=\"_blank\" href=\""+theURL +"\">"+ theNAME +"</a></td><td>"+in_obj.count+"</td></tr>";
                     final_s.push([in_obj.count,"<tr><td><a target=\"_blank\" href=\""+theURL +"\">"+ theNAME +"</a></td><td>"+in_obj.count+"</td></tr>"]);
                     console.log("LENGTH",final_s.length,total_len);
